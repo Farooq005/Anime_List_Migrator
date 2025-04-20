@@ -4,7 +4,7 @@ import os
 
 # Access secrets
 db_url = st.secrets["postgresql://neondb_owner:npg_ziW1uVZR4jhL@ep-dry-flower-a5cttzfr-pooler.us-east-2.aws.neon.tech/anime_migrate?sslmode=require"]
-mal_id = st.secrets["	7d40aab44a745bbefc83c9df14413f86"]
+mal_id = st.secrets["7d40aab44a745bbefc83c9df14413f86"]
 
 def main():
   st.title("Anime List Migrator")
