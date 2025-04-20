@@ -1,0 +1,15 @@
+init:
+    pip install -r requirements.txt
+    pre-commit install
+
+test:
+    pytest tests/ -v
+
+run-streamlit:
+    streamlit run src/frontend/app.py
+
+db-migrate:
+    python scripts/setup_db.py
+
+deploy:
+    prefect deploy --name production-flow
